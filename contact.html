@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- for icons link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Home page -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- contact us -->
+        <section class="location">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63041.17342008881!2d7.4711039999999995!3d9.0570752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1663703948931!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        </section>
+
+        <section class="contact-us">
+
+            <div class="row">
+                 <div class="contact-col">
+                    <div>
+                         <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ Road, ABC Building</h5>
+                            <p>New Hamtin, south Austra</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                       <span>
+                           <h5>+234 8158619466</h5>
+                           <p>Monday to Saturday, 10AM to 6PM</p>
+                       </span>
+                   </div>
+                   <div>
+                    <i class="fa fa-envelope-o"></i>
+                   <span>
+                       <h5>franciscoabhulimen@gmail.com</h5>
+                       <p>Email us for more information</p>
+                   </span>
+               </div>
+                 </div>
+                 <div class="contact-col">
+
+                    <form action="formhandler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                 </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>With over a thousand students and the best educational staff, our is said to be the best in most fields, most especially in our catering training and our baskestball team with current record for most wins, our university have no doubt raised to the top in such a small amount of time. And with our current findings is expected to exceed such heights. so join us today.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>  
+        </section>
+
+            <!-- javascript for  toggle menu -->
+            <script>
+
+                var navLinks = document.getElementById("navLinks")
+
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+
+            </script>
+        
+    </body>
+
+</html>

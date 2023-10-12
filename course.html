@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- for icons link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Home page -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Courses</h1>
+        </section>
+
+        <!-- courses -->
+        
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>We engage in a range of courses, to help perfect our student.</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum aperiam eveniet
+                         neque vel quae mollitia, ducimus eaque, numquam obcaecati beatae nobis rerum fugit
+                         quis magni corporis exercitationem nemo. Pariatur optio esse velit repellat explicabo quis eaque blanditiis et sed, 
+                        porro, consequuntur eum distinctio? Quis ab hic atque corporis libero.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum aperiam eveniet
+                         neque vel quae mollitia, ducimus eaque, numquam obcaecati beatae nobis rerum fugit
+                         quis magni corporis exercitationem nemo. Pariatur optio esse velit repellat explicabo quis eaque blanditiis et sed, 
+                        porro, consequuntur eum distinctio? Quis ab hic atque corporis libero.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorum aperiam eveniet
+                         neque vel quae mollitia, ducimus eaque, numquam obcaecati beatae nobis rerum fugit
+                         quis magni corporis exercitationem nemo. Pariatur optio esse velit repellat explicabo quis eaque blanditiis et sed, 
+                        porro, consequuntur eum distinctio? Quis ab hic atque corporis libero.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- facilities -->
+
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>At our university, we have the best facilities for making learning easy and fun.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class  Library</h3>
+                    <p>All year round, we have provided the best books and tools for learning, with our all time campus wifi avaliable for use.</p>
+                </div>  
+                <div class="facilities-col">
+                    <img src="images/baskestball.png">
+                    <h3>Baskest Ball Court</h3>
+                    <p>There is no learning without fun, that's why we have provided a standard baskestball court.</p>
+                </div> 
+                <div class="facilities-col">
+                    <img src="images/culinarylab.png">
+                    <h3>culinary Lab</h3>
+                    <p>With our state of the art culinary lab, we have created an environment were students can learn at ease. </p>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>With over a thousand students and the best educational staff, our is said to be the best in most fields, most especially in our catering training and our baskestball team with current record for most wins, our university have no doubt raised to the top in such a small amount of time. And with our current findings is expected to exceed such heights. so join us today.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>  
+        </section>
+
+            <!-- javascript for  toggle menu -->
+            <script>
+
+                var navLinks = document.getElementById("navLinks")
+
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+
+            </script>
+        
+    </body>
+
+</html>
